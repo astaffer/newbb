@@ -1,0 +1,182 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "header"
+
+.red-colored
+  color: $red
+.bold
+  font-weight: bold
+
+.header-nav
+  background-color: $blue
+.main-header
+  //min-height: 100vh
+  background-size: cover
+  background-position: center
+  position: relative
+  align-content: center
+.header-content
+  color: $blue
+  text-align: left
+  padding: 60px $gutter
+  position: relative
+
+.h1
+  color: $blue
+  font-size: 32px
+  font-family: roboto-bbiot, sans-serif
+  font-weight: normal
+  text-transform: uppercase
+  margin: 20px 0
+  line-height: 1.5
+.h2
+  color: $blue
+  font-size: 32px
+  font-family: roboto-bbiot, sans-serif
+  font-weight: normal
+  text-transform: uppercase
+  padding: 20px 0
+  line-height: 1.5
+/*Buttons*/
+.fill
+  &:hover, &:focus
+    box-shadow: inset 0 0 0 2em var(--hover)
+.pulse
+  &:hover, &:focus
+    animation: pulse 1s
+    box-shadow: 0 0 0 2em rgba(#fff,0)
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 var(--hover)
+.close
+  &:hover, &:focus
+    box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover)
+
+.raise
+  &:hover, &:focus
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover)
+    transform: translateY(-0.25em)
+
+.up
+  &:hover, &:focus
+    box-shadow: inset 0 -3.25em 0 0 var(--hover)
+
+.slide
+  &:hover, &:focus
+    box-shadow: inset 6.5em 0 0 0 var(--hover)
+
+.offset
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color)
+  &:hover, &:focus
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover)
+
+.fill
+  --color: #a972cb
+  --hover: #cb72aa
+
+.pulse
+  --color: transparentize($accent, .2)
+  --hover: transparentize($sand, .2)
+
+.close
+  --color: #ff7f82
+  --hover: #ffdc7f
+
+.raise
+  --color: #ffa260
+  --hover: #e5ff60
+
+.up
+  --color: #e4cb58
+  --hover: #94e458
+
+.slide
+  --color: #8fc866
+  --hover: #66c887
+
+.offset
+  --color: #19bc8b
+  --hover: #1973bc
+
+.button-main
+  color: var(--color)
+  transition: 0.25s
+  &:hover, &:focus
+    border-color: var(--hover)
+    color: $sand
+  background: transparentize($blue, .2)
+  border: 5px solid
+  font-family: montserrat-bbiot
+  font-size: 32px
+  line-height: 1
+  //margin: 0.5em
+  padding: 0.3em 2em
+  text-decoration: none
+.button-sign
+  color: var(--color)
+  transition: 0.25s
+  &:hover, &:focus
+    border-color: var(--hover)
+    color: $sand
+  background: transparentize($blue, .2)
+  border: 5px solid
+  font-family: montserrat-bbiot
+  font-size: 16px
+  line-height: 1
+  margin: 0.5em
+  padding: 0.3em 2em
+  text-decoration: none
+.affix  
+  position: fixed
+  width: 100%
+  top: 0
+.affix-top
+  width: 100%
+section
+  min-height: 400px
+  padding-bottom: 20px
+.owl-dots
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+.light-blue-bg
+  background-color: $light
+.footer-iiot
+  background-color: $dark
+  /*min-height: 400px*/
+.image-opacity-23
+  opacity: .23
+.main-text
+  color: $blue
+  font-size: 26px
+  font-family: roboto-bbiot, sans-serif
+  font-weight: normal
+  /*text-transform: uppercase*/
+  line-height: 1.5
+.parent
+  position: relative
+.center-center 
+  position: absolute
+  display: flex
+  top: 100px
+  width: 100%
+.pt30
+  padding-top: 30px
+.pt60
+  padding-top: 60px
+.grayscale
+  filter: grayscale(100%)
+  filter: gray; /* IE 6-9 */
+.svg-centered
+  display: block
+  margin: auto
+.contact-form
+  padding-left: 50px
+  padding-right: 50px
+.footer-social 
+  padding: 1.5rem
+  background-color: $pink
+@import "media" // Всегда в конце
