@@ -21,6 +21,11 @@ $(function() {
       });
     });
   }
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': ''
+  })
   $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -32,7 +37,7 @@ $(function() {
     itemsTablet: false,
     itemsMobile : false,
     dots: true,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true
   })

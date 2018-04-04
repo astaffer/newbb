@@ -146,7 +146,17 @@ section
   background-color: $light
 .footer-iiot
   background-color: $dark
-  /*min-height: 400px*/
+  // position: absolute
+  // width: 100%
+  // bottom: 0
+  // overflow:hidden
+.site 
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  background-color: $gray
+.site-content 
+  flex: 1
 .image-opacity-23
   opacity: .23
 .main-text
@@ -178,14 +188,14 @@ section
   padding-right: 50px
 .footer-social 
   padding: 1.5rem
-  background-color: $pink
+  background-color: $dark
 .owl-theme .owl-nav [class*=owl-]
   background: transparent
   color: #b0b0b0
   font-size: 30px
   position: absolute
   text-align: center
-  top: 30%
+  top: 50%
   &:hover 
     background: transparent
     color: #222222
@@ -194,4 +204,9 @@ section
     left: 0
   .owl-next
     right: 0
+.zoom
+  position: absolute
+  top: 5%
+  right: 5%
+  font-size: 26px
 @import "media" // Всегда в конце

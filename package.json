@@ -25,6 +25,7 @@
     "bulma-carousel": "^0.2.2",
     "del": "^3.0.0",
     "gulp-cache": "^1.0.1",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "lightbox2": "^2.10.0"
   }
 }

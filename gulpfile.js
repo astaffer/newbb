@@ -30,6 +30,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap-affix.min.js',
+		'app/libs/lightbox2/js/lightbox-plus-jquery.min.js',
 		'app/libs/owl-carousel/owl.carousel.js',
 		'app/js/common.js', // Всегда в конце
 		])
