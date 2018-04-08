@@ -209,4 +209,27 @@ section
   top: 5%
   right: 5%
   font-size: 26px
+.is-my-dark
+  background-color: $accent
+  color: #fff
+.is-my-light
+  background-color: $pink
+  color: #363636
+.is-my-sand
+  background-color: $light
+  color: #363636
+.is-my-dark.is-outlined
+    background-color: transparent
+    border-color: $dark
+    color: $dark
+.is-my-dark.is-outlined:focus, .is-my-dark.is-outlined:hover 
+    background-color: $dark
+    border-color: $dark
+    color: #fff
+.content
+  line-height: 1.15
+.description .content
+  height: 25vh
+  overflow-y: scroll
+  overflow-x: hidden
 @import "media" // Всегда в конце
