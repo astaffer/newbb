@@ -225,10 +225,14 @@ section
 .is-my-dark
   background-color: $dark
   color: #fff
+.is-my-green
+  background-color: $green
+  color: #fff
 .is-my-dark.is-outlined
     background-color: transparent
     border-color: $dark
     color: $dark
+    width: 50%
 .is-my-dark.is-outlined:focus, .is-my-dark.is-outlined:hover 
     background-color: $dark
     border-color: $dark
@@ -236,17 +240,21 @@ section
 .content
   line-height: 1.15
   text-align: justify
+
 .description .content
-  height: 25vh
+  height: 20vh
   overflow-y: scroll
   overflow-x: hidden
+  border: 1px solid grey
+  border-radius: 2px
+  padding: 10px
 .notification 
   padding: 0.75rem 1.25rem
 .subtitle:not(:last-child), .content:not(:last-child)
     margin-bottom: 0.5rem
 .is-centered
   margin: auto
-  width: 50%
+  width: 100%
   text-align: center
 .tile.is-vertical>.tile.is-child:not(:last-child)
     margin-bottom: 0.75rem!important
